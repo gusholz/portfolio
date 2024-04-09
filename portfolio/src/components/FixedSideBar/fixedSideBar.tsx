@@ -1,6 +1,5 @@
 import TitledIcon from "../Icons/titledIcon";
 
-
 export default function FixedSideBar() {
     return (
         <div className={`fixed-sidebar`}>
