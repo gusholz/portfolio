@@ -5,6 +5,7 @@ import Callout from "@/components/Callout/callout";
 import Tagline from "@/components/Tagline/tagline";
 import Section from "@/components/Section/section";
 import ProjectsShowcase from "@/components/ProjectsShowcase/projectsShowcase";
+import StackDisplay from "@/components/StackDisplay/stackDisplay";
 
 export default function Home() {
   return (
@@ -23,7 +24,9 @@ export default function Home() {
           imageUrl="static/images/githubIcon.svg"
           inverted = {true}
         >
-          <h1>oi</h1>
+          <StackDisplay
+            imageArray={["githubIcon.svg","githubIcon.svg","githubIcon.svg"]}
+          />
         </Section> 
         <Section
           imageUrl="static/images/githubIcon.svg"

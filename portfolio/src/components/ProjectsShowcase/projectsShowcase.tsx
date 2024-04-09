@@ -10,12 +10,12 @@ export default function ProjectsShowcase() {
                 imageUrl=""
             />
             <Project
-                title="projeto top 1"
+                title="projeto top 2"
                 text="bebebebe"
                 imageUrl=""
             />
             <Project
-                title="projeto top 1"
+                title="projeto top 3"
                 text="cececece"
                 imageUrl=""
             />
