@@ -1,11 +1,11 @@
 import Head from "next/head";
-import FixedSideBar from "@/components/fixedSideBar/FixedSideBar";
-import Callout from "@/components/callout/Callout";
-import Tagline from "@/components/tagline/Tagline";
-import Section from "@/components/section/Section";
-import ProjectsShowcase from "@/components/projectsShowcase/ProjectsShowcase";
-import StackDisplay from "@/components/stackDisplay/StackDisplay";
-import { IconManager } from "@/commons/iconManager/iconManager";
+import FixedSideBar from "../components/fixedSideBar/FixedSideBar";
+import Callout from "../components/callout/Callout";
+import Tagline from "../components/tagline/Tagline";
+import Section from "../components/section/Section";
+import ProjectsShowcase from "../components/projectsShowcase/ProjectsShowcase";
+import StackDisplay from "../components/stackDisplay/StackDisplay";
+import { IconManager } from "../commons/iconManager/iconManager";
 import styles from "./reset.module.css"
 
 export default function Home() {
