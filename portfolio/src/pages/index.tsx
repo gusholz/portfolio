@@ -1,11 +1,11 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
-import FixedSideBar from "@/components/FixedSideBar/fixedSideBar";
-import Callout from "@/components/Callout/callout";
-import Tagline from "@/components/Tagline/tagline";
-import Section from "@/components/Section/section";
-import ProjectsShowcase from "@/components/ProjectsShowcase/projectsShowcase";
-import StackDisplay from "@/components/StackDisplay/stackDisplay";
+import FixedSideBar from "@/components/fixedSideBar/FixedSideBar";
+import Callout from "@/components/callout/Callout";
+import Tagline from "@/components/tagline/Tagline";
+import Section from "@/components/section/Section";
+import ProjectsShowcase from "@/components/projectsShowcase/ProjectsShowcase";
+import StackDisplay from "@/components/stackDisplay/StackDisplay";
+import { IconManager } from "@/commons/iconManager/iconManager";
 
 export default function Home() {
   return (
@@ -16,24 +16,38 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main}`}>
+      <main className={``}>
         <Tagline></Tagline>
         <Callout/>
         <FixedSideBar/>
+        
         <Section
-          imageUrl="static/images/githubIcon.svg"
+          imageUrl= {IconManager.stack}
           inverted = {true}
         >
-          <StackDisplay
-            imageArray={["githubIcon.svg","githubIcon.svg","githubIcon.svg"]}
-          />
+            <StackDisplay
+              imageArray={[
+                IconManager.reactIcon, 
+                IconManager.javascriptIcon,
+                IconManager.typescriptIcon,
+                IconManager.gitIcon,
+                IconManager.swiftIcon
+              ]}
+            />
         </Section> 
+        
         <Section
-          imageUrl="static/images/githubIcon.svg"
+          imageUrl= {IconManager.design}
           inverted = {false}
         >
-          <h1>oi</h1>
+           <StackDisplay
+              imageArray={[
+                IconManager.figmaIcon, 
+                IconManager.adobeIllustrator,
+              ]}
+            />
         </Section> 
+        
         <ProjectsShowcase/>
       </main>
     </>

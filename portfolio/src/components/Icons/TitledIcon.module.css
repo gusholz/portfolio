@@ -1,0 +1,11 @@
+.imageDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageTitle {
+    font-size: 20px;
+    padding: 0;
+}

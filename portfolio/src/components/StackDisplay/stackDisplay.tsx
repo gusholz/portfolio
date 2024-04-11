@@ -1,22 +1,26 @@
 import React from 'react';
 import Image from 'next/image';
+import { iconPath } from "@/commons/importPath/ImportPath"
+import styles from "./StackDisplay.module.css"
+import TitledIcon from '../Icons/titledIcon';
 
 type StackDisplayProps = {
     imageArray: string[];
 }
 
+
 export default function StackDisplay(props: StackDisplayProps) {
+
     return (
-        <div>
+        <div className={styles.stackDisplay}>
             {props.imageArray.map((imageUrl, index) => (
-                <div key={index}>
-                    <Image 
-                        src={imageUrl}
-                        alt=""
-                        width={200}
-                        height={200}
+                <span className={styles.stackDisplayIcons} key={index}>
+                    <TitledIcon 
+                        imageSrc={`${imageUrl}`}
+                        titled={imageUrl}
+                        alt={`${imageUrl} Icon`}
                     />
-                </div>
+                </span>
             ))}
         </div>
     );

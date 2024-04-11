@@ -1,0 +1,7 @@
+.fixedSidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 3vw;
+    top: 15vh;  
+}

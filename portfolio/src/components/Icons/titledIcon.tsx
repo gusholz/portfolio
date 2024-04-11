@@ -1,4 +1,6 @@
 import Image from "next/image";
+import styles from "@/components/Icons/TitledIcon.module.css"
+import { iconPath } from "@/commons/importPath/ImportPath"
 
 type titledIconProps = {
     imageSrc: string
@@ -7,17 +9,17 @@ type titledIconProps = {
 }
 
 export default function TitledIcon(props: titledIconProps) {
-    const baseImportUrl: string = `/static/images/`
+    const imageSize: number = 80;
 
     return (
-        <div className={`image-div`}>
+        <div className={styles.imageDiv}>
             <Image
-                src={`${baseImportUrl}${props.imageSrc}Icon.svg`}
-                alt={`${props.alt}`}
-                width={93}
-                height={93}
+                src= {`${iconPath}${props.imageSrc}`}
+                alt= {`${props.alt}`}
+                width={imageSize}
+                height={imageSize} 
             />
-            <h3 className={`image-title`}>
+            <h3 className={styles.imageTitle}>
                 {props.titled}
             </h3>
         </div>

@@ -1,23 +1,25 @@
+import { IconManager } from "@/commons/iconManager/iconManager";
 import TitledIcon from "../Icons/titledIcon";
+import styles from "@/components/FixedSideBar/FixedSidebar.module.css"
 
 export default function FixedSideBar() {
     return (
-        <div className={`fixed-sidebar`}>
+        <div className={styles.fixedSidebar}>
             <TitledIcon
-                imageSrc="github"
+                imageSrc= {IconManager.githubIcon}
                 alt="Link for my Github page"
                 titled="Github"
             />
             <TitledIcon
-                imageSrc="linkedin"
+                imageSrc= {IconManager.linkedinIcon}
                 alt="Link for my Linkedin page"
                 titled="Linkedin"
             />
             <TitledIcon
-                imageSrc="mail"
+                imageSrc= {IconManager.mailIcon}
                 alt="Link for my contact email"
                 titled="Email"
             />
         </div>
-    )
+    );
 }

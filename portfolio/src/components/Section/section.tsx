@@ -1,5 +1,7 @@
 import { ReactElement } from "react"
 import Image from "next/image"
+import { iconPath } from "@/commons/importPath/ImportPath"
+import styles from "./Section.module.css"
 
 type props = {
     imageUrl: string
@@ -8,28 +10,29 @@ type props = {
 }
 
 export default function Section(props: props) {
+    const imageSize: number = 186;
+
     return (
         props.inverted ? (
-            <div className={``}>
+            <div className={styles.section}>
                 {props.children}
                 <Image
-                src= {props.imageUrl}
+                src= {`${iconPath}${props.imageUrl}`}
                 alt= {``}
-                width= {186}
-                height= {186}
+                width= {imageSize}
+                height= {imageSize}
                 />
             </div>
         ) : (
-            <div className={``}>
+            <div className={styles.section}>
                 <Image
-                src= {props.imageUrl}
+                src= {`${iconPath}${props.imageUrl}`}
                 alt= {``}
-                width= {186}
-                height= {186}
+                width= {imageSize}
+                height= {imageSize}
                 />
                 {props.children}
             </div>
-            
         )
     )
 }
