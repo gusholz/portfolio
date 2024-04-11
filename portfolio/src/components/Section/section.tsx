@@ -2,6 +2,7 @@ import { ReactElement } from "react"
 import Image from "next/image"
 import { iconPath } from "@/commons/importPath/ImportPath"
 import styles from "./Section.module.css"
+import { SwitzerThin } from "@/commons/fontManager/fonts"
 
 type props = {
     imageUrl: string
@@ -14,7 +15,7 @@ export default function Section(props: props) {
 
     return (
         props.inverted ? (
-            <div className={styles.section}>
+            <div className={`${styles.section} ${SwitzerThin.className}`}>
                 {props.children}
                 <Image
                 src= {`${iconPath}${props.imageUrl}`}
@@ -24,7 +25,7 @@ export default function Section(props: props) {
                 />
             </div>
         ) : (
-            <div className={styles.section}>
+            <div className={`${styles.section} ${SwitzerThin.className}`}>
                 <Image
                 src= {`${iconPath}${props.imageUrl}`}
                 alt= {``}

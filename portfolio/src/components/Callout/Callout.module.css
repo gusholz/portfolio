@@ -1,13 +1,3 @@
-@font-face {
-    font-family: switzer-extrabold-italic;
-    src: url(../../../public/static/fonts/Switzer-ExtraboldItalic.otf);
-}
-
-@font-face {
-    font-family: switzer-thin;
-    src: url(../../../public/static/fonts/Switzer-Thin.otf);
-}
-
 .div {
     display: flex;
     align-items: baseline;
@@ -18,7 +8,6 @@
 
 
 .h1 {
-    font-family: switzer-extrabold-italic;
     font-size: 5vw;
     margin: 0;
     padding: 0;
@@ -27,7 +16,6 @@
 }
 
 .h2 {
-    font-family: switzer-thin;
     font-size: 2vw;
     margin: 0;
     padding: 0;
