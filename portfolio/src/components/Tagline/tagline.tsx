@@ -1,13 +1,28 @@
 import styles from "./Tagline.module.css"
 
 export default function Tagline() {
+
+    const taglinePhrases: string[] = [
+        "{",
+        "prototyping",
+        "designing",
+        "coding",
+        "code review",
+        "unitary tests",
+        "Continuos Integration",
+        "coding",
+        "code review",
+        "unitary tests",
+        "Continuos Integration",
+        "}"
+    ]
+
     return (
         <div className={`${styles.div}`}>
             <ul className={`${styles.ulist}`}>
-                <li className={`${styles.ulistElement}`}>prototyping</li>
-                <li>coding</li>
-                <li>designing</li>
-                <li>code review</li>
+                {taglinePhrases.map((string, index) => (
+                    <li key={index} className={`${styles.ulistElement}`}>{string}</li>
+                ))}
             </ul>
         </div>
     );

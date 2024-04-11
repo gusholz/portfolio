@@ -10,5 +10,6 @@ export enum IconManager {
     swiftIcon = "swiftIcon.svg",
     typescriptIcon = "typescriptIcon.svg",
     stack = "stackIcon.svg",
-    design = "designIcon.svg"
+    design = "designIcon.svg",
+    darkModeButton = "toggle-darkmode.svg"
 }

@@ -11,6 +11,8 @@ type StackDisplayProps = {
 
 export default function StackDisplay(props: StackDisplayProps) {
 
+    const imgSize: number = 80;
+
     return (
         <div className={styles.stackDisplay}>
             {props.imageArray.map((imageUrl, index) => (
@@ -19,6 +21,7 @@ export default function StackDisplay(props: StackDisplayProps) {
                         imageSrc={`${imageUrl}`}
                         titled={imageUrl}
                         alt={`${imageUrl} Icon`}
+                        imgSize={imgSize}
                     />
                 </span>
             ))}

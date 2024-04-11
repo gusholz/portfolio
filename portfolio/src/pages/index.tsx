@@ -6,6 +6,7 @@ import Section from "@/components/section/Section";
 import ProjectsShowcase from "@/components/projectsShowcase/ProjectsShowcase";
 import StackDisplay from "@/components/stackDisplay/StackDisplay";
 import { IconManager } from "@/commons/iconManager/iconManager";
+import styles from "./reset.module.css"
 
 export default function Home() {
   return (
@@ -16,10 +17,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={``}>
+      <main className={styles.main}>
         <Tagline></Tagline>
         <Callout/>
         <FixedSideBar/>
+
+        <Section
+          imageUrl= {IconManager.stack}
+          inverted = {false}
+        >
+            <p>
+              Here goes an awesome text 
+            </p>
+        </Section> 
         
         <Section
           imageUrl= {IconManager.stack}

@@ -9,7 +9,9 @@
 }
 
 .project {
-    background-color: aqua;
+    background-color: #D9D9D9;
+    padding: 4vw;
+    margin-bottom: 4vh;
 }
 
 .goodbye {

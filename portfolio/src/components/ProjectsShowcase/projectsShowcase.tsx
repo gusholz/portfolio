@@ -26,7 +26,7 @@ export default function ProjectsShowcase() {
                 <h4 className={styles.goodbye}>Thanks for the read!</h4>
             </div>
         </div>
-    )
+    );
 }
 
 type props = {
@@ -49,5 +49,5 @@ function Project(props: props) {
                 props.text
             </p>
         </div>
-    )
+    );
 }
