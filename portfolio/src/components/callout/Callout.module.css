@@ -1,0 +1,25 @@
+.div {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 30%;
+    margin-bottom: 25%;
+}
+
+
+.h1 {
+    font-size: 5vw;
+    margin: 0;
+    padding: 0;
+    margin-right: 2%;
+    color: #0D0D0D;
+}
+
+.h2 {
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+    color: #0D0D0D;
+}
+
+

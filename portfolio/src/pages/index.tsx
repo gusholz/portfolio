@@ -1,5 +1,5 @@
 import Head from "next/head";
-import FixedSideBar from "../components/fixedSideBar/FixedSideBar";
+import FixedSideBar from "@/components/fixedSideBar/FixedSideBar";
 import Callout from "../components/callout/Callout";
 import Tagline from "../components/tagline/Tagline";
 import Section from "../components/section/Section";
