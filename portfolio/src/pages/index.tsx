@@ -27,7 +27,7 @@ export default function Home() {
           inverted = {false}
         >
             <p>
-              Here goes an awesome text 
+              Here goes an awesome text that talks about me
             </p>
         </Section> 
         
