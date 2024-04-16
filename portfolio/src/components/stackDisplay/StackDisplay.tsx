@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import { iconPath } from "@/commons/importPath/ImportPath"
 import styles from "./StackDisplay.module.css"
 import TitledIcon from '../Icons/titledIcon';
 
@@ -8,6 +6,15 @@ type StackDisplayProps = {
     imageArray: string[];
 }
 
+function formatIconName(imageUrl: string): string {
+    const commonPart: string = "Icon.svg";
+    const result = imageUrl.slice(0, imageUrl.length - commonPart.length);
+    return capitalizeFirstLetter(result);
+}
+
+function capitalizeFirstLetter(string: string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 export default function StackDisplay(props: StackDisplayProps) {
 
@@ -19,7 +26,7 @@ export default function StackDisplay(props: StackDisplayProps) {
                 <span className={styles.stackDisplayIcons} key={index}>
                     <TitledIcon 
                         imageSrc={`${imageUrl}`}
-                        titled={imageUrl}
+                        titled={formatIconName(imageUrl)}
                         alt={`${imageUrl} Icon`}
                         imgSize={imgSize}
                     />

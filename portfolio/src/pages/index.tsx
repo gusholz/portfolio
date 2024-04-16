@@ -1,5 +1,5 @@
 import Head from "next/head";
-import FixedSideBar from "@/components/fixedSideBar/FixedSideBar";
+import FixedSideBar from "../components/fixedSideBar/FixedSideBar";
 import Callout from "../components/callout/Callout";
 import Tagline from "../components/tagline/Tagline";
 import Section from "../components/section/Section";
@@ -7,6 +7,7 @@ import ProjectsShowcase from "../components/projectsShowcase/ProjectsShowcase";
 import StackDisplay from "../components/stackDisplay/StackDisplay";
 import { IconManager } from "../commons/iconManager/iconManager";
 import styles from "./reset.module.css"
+import TextSection from "../components/textSection/TextSection";
 
 export default function Home() {
   return (
@@ -26,9 +27,9 @@ export default function Home() {
           imageUrl= {IconManager.stack}
           inverted = {false}
         >
-            <p>
-              Here goes an awesome text that talks about me
-            </p>
+            <TextSection
+              text = {"Here goes my awesome text talking about how incredible I am at work"}
+            />
         </Section> 
         
         <Section

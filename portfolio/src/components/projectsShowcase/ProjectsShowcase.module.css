@@ -1,3 +1,8 @@
+@font-face {
+    font-family: switzer-extrabold-italic;
+    src: url(../../../public/static/fonts/Switzer-ExtraboldItalic.otf);
+}
+
 .div {
     display: flex;
     flex-direction: column;
@@ -5,7 +10,8 @@
 }
 
 .title {
-    font-size: 64px;
+    font-family: switzer-extrabold-italic;
+    font-size: 3vw;
 }
 
 .project {
@@ -15,5 +21,12 @@
 }
 
 .goodbye {
-text-align: center;
+    font-family: switzer-extrabold-italic;
+    text-align: center;
+    font-size: 4.5vw;
+}
+
+.h3 {
+    font-family: switzer-extrabold-italic;
+    font-size: 3vw;
 }

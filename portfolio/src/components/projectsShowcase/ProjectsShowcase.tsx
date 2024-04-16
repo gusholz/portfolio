@@ -38,9 +38,9 @@ type props = {
 function Project(props: props) {
     return (
         <div className = {styles.project}>
-            <h3>{props.title}</h3>
+            <h3 className= {styles.h3}>{props.title}</h3>
             <Image
-                src = {`${iconPath}${props.imageUrl}`}
+                src= {`${iconPath}${props.imageUrl}`}
                 alt=""
                 width={250}
                 height={250}
