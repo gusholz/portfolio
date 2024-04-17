@@ -4,18 +4,23 @@ import styles from "./FixedSideBar.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { iconPath } from "@/commons/importPath/ImportPath";
+import { useContext } from "react";
+import { ThemeContext } from "@/providers/ThemeProvider";
 
 export default function FixedSideBar() {
+    const {darkMode, toggleDarkMode} = useContext(ThemeContext);
+
     const imgSize: number = 35;
 
     return (
         <div className={styles.fixedSidebar}>
             <Image
-                className={styles.darkModeButton}
+                className={darkMode? styles.darkModeButtonActive :styles.darkModeButton}
                 src={`${iconPath}${IconManager.darkModeButton}`}
                 alt="Button to toggle the dark mode"
                 width={20}
                 height={20}
+                onClick={toggleDarkMode}
             />
             <Link href="https://github.com/gusholz" className={styles.customLink}>
                 <TitledIcon

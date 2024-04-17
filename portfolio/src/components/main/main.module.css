@@ -1,0 +1,7 @@
+.main {
+    background-color: var(--white);
+}
+
+.mainDarkmode {
+    background-color: var(--gray_dark);
+}

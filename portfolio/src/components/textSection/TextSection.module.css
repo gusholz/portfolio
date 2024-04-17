@@ -1,3 +1,14 @@
+@font-face {
+    font-family: switzer-regular;
+    src: url(../../../public/static/fonts/Switzer-Regular.otf);
+}
+
 .paragraph {
-    font-size: 20px;
+    font-family: switzer-regular;
+    font-size: 1.5rem;
+}
+
+.paragraphDarkmode {
+    font-family: switzer-regular;
+    font-size: 1.5rem;
 }

@@ -16,8 +16,16 @@
 .ulistElement {
     display: inline-block;
     font-family: switzer-thin;
-    color: #0D0D0D;
-    font-size: 1.5vw;
+    color: var(--black);
+    font-size: 1.5rem;
+    margin-right: 5%;
+}
+
+.ulistElementDarkmode {
+    display: inline-block;
+    font-family: switzer-thin;
+    color: var(--white);
+    font-size: 1.5rem;
     margin-right: 5%;
 }
 

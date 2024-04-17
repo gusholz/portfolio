@@ -15,4 +15,30 @@
 
 .darkModeButton {
     margin-bottom: 4vh;
+    animation: rotateIconBackward 0.5s linear 1 forwards;
+}
+
+.darkModeButtonActive {
+    margin-bottom: 4vh;
+    animation: rotateIconForward 0.5s linear 1 forwards;
+}
+
+@keyframes rotateIconForward {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotateIconBackward {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }

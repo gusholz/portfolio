@@ -1,15 +1,9 @@
 import Head from "next/head";
-import FixedSideBar from "../components/fixedSideBar/FixedSideBar";
-import Callout from "../components/callout/Callout";
-import Tagline from "../components/tagline/Tagline";
-import Section from "../components/section/Section";
-import ProjectsShowcase from "../components/projectsShowcase/ProjectsShowcase";
-import StackDisplay from "../components/stackDisplay/StackDisplay";
-import { IconManager } from "../commons/iconManager/iconManager";
-import styles from "./reset.module.css"
-import TextSection from "../components/textSection/TextSection";
+import { DarkModeProvider } from "../providers/ThemeProvider";
+import Main from "@/components/main/Main";
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -18,49 +12,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main}`}>
-        <Tagline></Tagline>
-        <Callout/>
-        <FixedSideBar/>
-
-        <Section
-          imageUrl= {IconManager.stack}
-          inverted = {false}
-        >
-            <TextSection
-              text = {"Here goes my awesome text talking about how incredible I am at work"}
-            />
-        </Section> 
-        
-        <Section
-          imageUrl= {IconManager.stack}
-          inverted = {true}
-        >
-            <StackDisplay
-              imageArray={[
-                IconManager.reactIcon, 
-                IconManager.javascriptIcon,
-                IconManager.typescriptIcon,
-                IconManager.gitIcon,
-                IconManager.swiftIcon
-              ]}
-            />
-        </Section> 
-        
-        <Section
-          imageUrl= {IconManager.design}
-          inverted = {false}
-        >
-           <StackDisplay
-              imageArray={[
-                IconManager.figmaIcon, 
-                IconManager.adobeIllustrator,
-              ]}
-            />
-        </Section> 
-        
-        <ProjectsShowcase/>
-      </main>
+      <style jsx global>{`
+        body {
+          margin: 0;
+          padding: 0;
+          --white: #D9D9D9;
+          --gray_light: #8C8C8C;
+          --gray_medium: #737373;
+          --gray_dark: #404040;
+          --black: #0D0D0D
+        }
+      `}</style>
+      <DarkModeProvider>
+        <Main/>
+      </DarkModeProvider>
     </>
   );
 }
