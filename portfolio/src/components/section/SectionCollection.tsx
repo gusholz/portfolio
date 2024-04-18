@@ -2,8 +2,13 @@ import Section from "./Section"
 import StackDisplay from "../stackDisplay/StackDisplay"
 import TextSection from "../textSection/TextSection"
 import { IconManager } from "@/commons/iconManager/iconManager"
+import { useContext } from "react";
+import { ThemeContext } from "@/providers/ThemeProvider";
 
 export default function SectionCollection() {
+    
+    const {darkMode} = useContext(ThemeContext);
+
     return (
         <>
             <Section
@@ -11,7 +16,7 @@ export default function SectionCollection() {
             inverted = {false}
             >
                 <TextSection
-                text = {"Here goes my awesome text talking about how incredible I am at work"}
+                text= {"Here goes my awesome text talking about how incredible I am at work"}
                 />
             </Section> 
             
@@ -20,13 +25,21 @@ export default function SectionCollection() {
             inverted = {true}
             >
                 <StackDisplay
-                imageArray={[
-                    IconManager.reactIcon, 
-                    IconManager.javascriptIcon,
-                    IconManager.typescriptIcon,
-                    IconManager.gitIcon,
-                    IconManager.swiftIcon
-                ]}
+                imageArray={
+                    darkMode ? [
+                        IconManager.react_darkmodeIcon, 
+                        IconManager.javascript_darkmodeIcon,
+                        IconManager.typescript_darkmodeIcon,
+                        IconManager.git_darkmodeIcon,
+                        IconManager.swift_darkmodeIcon
+                    ] : [
+                        IconManager.reactIcon, 
+                        IconManager.javascriptIcon,
+                        IconManager.typescriptIcon,
+                        IconManager.gitIcon,
+                        IconManager.swiftIcon    
+                    ]
+                }
                 />
             </Section> 
             
@@ -35,10 +48,15 @@ export default function SectionCollection() {
             inverted = {false}
             >
             <StackDisplay
-                imageArray={[
-                    IconManager.figmaIcon, 
-                    IconManager.adobeIllustrator,
-                ]}
+                imageArray={
+                    darkMode ? [
+                        IconManager.figma_darkmodeIcon, 
+                        IconManager.adobeIllustratorDarkmode
+                    ] : [
+                        IconManager.figmaIcon, 
+                        IconManager.adobeIllustrator
+                    ]
+                }
                 />
             </Section> 
         </>

@@ -7,7 +7,8 @@ type StackDisplayProps = {
 }
 
 function formatIconName(imageUrl: string): string {
-    const commonPart: string = "Icon.svg";
+    let commonPart: string;
+    commonPart = imageUrl.includes("_") ? "_darkmodeIcon.svg" : "Icon.svg"
     const result = imageUrl.slice(0, imageUrl.length - commonPart.length);
     return capitalizeFirstLetter(result);
 }

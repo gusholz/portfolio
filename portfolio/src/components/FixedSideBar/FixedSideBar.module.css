@@ -14,11 +14,13 @@
 }
 
 .darkModeButton {
+    cursor: pointer;
     margin-bottom: 4vh;
     animation: rotateIconBackward 0.5s linear 1 forwards;
 }
 
 .darkModeButtonActive {
+    cursor: pointer;
     margin-bottom: 4vh;
     animation: rotateIconForward 0.5s linear 1 forwards;
 }

@@ -10,5 +10,5 @@ export default function TextSection(text:{ text: string}) {
         <p className={darkMode ? styles.paragraphDarkmode :styles.paragraph}>
             {text.text}
         </p>
-    )
+    );
 }

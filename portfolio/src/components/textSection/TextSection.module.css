@@ -4,11 +4,13 @@
 }
 
 .paragraph {
+    color: var(--black);
     font-family: switzer-regular;
     font-size: 1.5rem;
 }
 
 .paragraphDarkmode {
+    color: var(--white);
     font-family: switzer-regular;
     font-size: 1.5rem;
 }

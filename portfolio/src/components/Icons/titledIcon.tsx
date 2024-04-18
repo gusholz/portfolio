@@ -1,6 +1,8 @@
 import Image from "next/image";
-import styles from "@/components/Icons/TitledIcon.module.css"
 import { iconPath } from "@/commons/importPath/ImportPath"
+import { useContext } from "react";
+import { ThemeContext } from "../../providers/ThemeProvider";
+import styles from "@/components/Icons/TitledIcon.module.css"
 
 type titledIconProps = {
     imageSrc: string
@@ -11,6 +13,8 @@ type titledIconProps = {
 
 export default function TitledIcon(props: titledIconProps) {
 
+    const { darkMode } = useContext(ThemeContext);
+
     return (
         <div className={styles.imageDiv}>
             <Image
@@ -19,7 +23,7 @@ export default function TitledIcon(props: titledIconProps) {
                 width={props.imgSize}
                 height={props.imgSize} 
             />
-            <h3 className={styles.imageTitle}>
+            <h3 className={darkMode ? styles.imageTitleDarkmode: styles.imageTitle}>
                 {props.titled}
             </h3>
         </div>

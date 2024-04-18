@@ -24,7 +24,7 @@ export default function FixedSideBar() {
             />
             <Link href="https://github.com/gusholz" className={styles.customLink}>
                 <TitledIcon
-                    imageSrc= {IconManager.githubIcon}
+                    imageSrc= {darkMode ? IconManager.github_darkmodeIcon : IconManager.githubIcon}
                     alt="Link for my Github page"
                     titled="Github"
                     imgSize={imgSize}
@@ -32,7 +32,7 @@ export default function FixedSideBar() {
             </Link>
             <Link href="https://www.linkedin.com/in/gustavo-holzmann/" className={styles.customLink}>
                 <TitledIcon
-                    imageSrc= {IconManager.linkedinIcon}
+                    imageSrc= {darkMode? IconManager.linkedin_darkmodeIcon : IconManager.linkedinIcon}
                     alt="Link for my Linkedin page"
                     titled="Linkedin"
                     imgSize={imgSize}
@@ -41,7 +41,7 @@ export default function FixedSideBar() {
             
             <Link href="mailto:gustavobarretohv@live.com" className={styles.customLink}>
                 <TitledIcon
-                    imageSrc= {IconManager.mailIcon}
+                    imageSrc= {darkMode? IconManager.mail_darkmodeIcon : IconManager.mailIcon}
                     alt="Link for my contact email"
                     titled="Email"
                     imgSize={imgSize}

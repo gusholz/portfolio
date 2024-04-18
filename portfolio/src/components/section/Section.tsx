@@ -2,7 +2,7 @@ import { ReactElement } from "react"
 import Image from "next/image"
 import { iconPath } from "@/commons/importPath/ImportPath"
 import styles from "./Section.module.css"
-import { SwitzerThin } from "@/commons/fontManager/fonts"
+import { SwitzerThin } from "../../commons/fontManager/fonts"
 
 type props = {
     imageUrl: string

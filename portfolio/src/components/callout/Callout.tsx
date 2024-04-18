@@ -1,6 +1,6 @@
 import styles from "./Callout.module.css"
-import { SwitzerExtraboldItalic } from "@/commons/fontManager/fonts";
-import { SwitzerThin } from "@/commons/fontManager/fonts";
+import { SwitzerExtraboldItalic } from "../../commons/fontManager/fonts";
+import { SwitzerThin } from "../../commons/fontManager/fonts";
 import { useContext } from "react";
 import { ThemeContext } from "../../providers/ThemeProvider";
 

@@ -12,7 +12,16 @@
 
 .imageTitle {
     font-family: switzer-thin;
-    color: #0D0D0D;
+    color: var(--black);
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5vh;
+}
+
+.imageTitleDarkmode {
+    font-family: switzer-thin;
+    color: var(--white);
     font-size: 1.2rem;
     padding: 0;
     margin: 0;
