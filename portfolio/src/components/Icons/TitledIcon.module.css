@@ -8,7 +8,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: rotate(0deg); 
+    transition: transform 0.4s ease-in;
 }
+
+.rotateDiv {
+    transform: rotate(15deg); 
+    transition: transform 0.4s ease-in;
+}
+
 
 .imageTitle {
     font-family: switzer-thin;

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { iconPath } from "@/commons/importPath/ImportPath"
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "../../providers/ThemeProvider";
 import styles from "@/components/Icons/TitledIcon.module.css"
 
@@ -12,17 +12,23 @@ type titledIconProps = {
 }
 
 export default function TitledIcon(props: titledIconProps) {
-
+    
+    const [isHovered, setIsHovered] = useState<boolean>(false);
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <div className={styles.imageDiv}>
+        <div className= {`${styles.imageDiv} ${isHovered ? styles.rotateDiv : ''}`}  
+            onMouseEnter= {(e) => {setIsHovered(true)}}
+            onMouseLeave= {(e) => {setIsHovered(false)}}
+            >
+            
             <Image
                 src= {`${iconPath}${props.imageSrc}`}
                 alt= {`${props.alt}`}
-                width={props.imgSize}
-                height={props.imgSize} 
+                width= {props.imgSize}
+                height= {props.imgSize} 
             />
+
             <h3 className={darkMode ? styles.imageTitleDarkmode: styles.imageTitle}>
                 {props.titled}
             </h3>

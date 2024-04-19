@@ -9,6 +9,7 @@ import styles from "./main.module.css";
 
 
 export default function Main() {
+    
     const { darkMode } = useContext(ThemeContext);
 
     return (
@@ -21,5 +22,5 @@ export default function Main() {
             <ProjectsShowcase />
             </main>
         </>
-    )
+    );
 }

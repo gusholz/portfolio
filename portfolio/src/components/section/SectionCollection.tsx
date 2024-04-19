@@ -60,5 +60,5 @@ export default function SectionCollection() {
                 />
             </Section> 
         </>
-    )
+    );
 }
