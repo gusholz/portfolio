@@ -11,9 +11,7 @@ type titledIconProps = {
     imgSize: number
 }
 
-export default function TitledIcon(props: titledIconProps) {
-    
-    const [isHovered, setIsHovered] = useState<boolean>(false);
+export default function TitledIcon(props: titledIconProps) {    const [isHovered, setIsHovered] = useState<boolean>(false);
     const { darkMode } = useContext(ThemeContext);
 
     return (
