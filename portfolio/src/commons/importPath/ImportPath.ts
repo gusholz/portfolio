@@ -1,1 +1,1 @@
-export const iconPath: string = "/static/images/"
+export const iconPath: string = "/static/images/";

@@ -1,7 +1,7 @@
 .section {
-    display: flex;
-    margin-left: 10vw;
-    margin-right: 15vw;
-    margin-bottom: 25vh;
-    justify-content: space-around;
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 15vw;
+  margin-bottom: 25vh;
+  justify-content: space-around;
 }

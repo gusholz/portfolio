@@ -1,42 +1,42 @@
 @font-face {
-    font-family: switzer-thin;
-    src: url(../../../public/static/fonts/Switzer-Thin.otf);
+  font-family: switzer-thin;
+  src: url(../../../public/static/fonts/Switzer-Thin.otf);
 }
 
 .div {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .ulist {
-    white-space: nowrap; /* Prevent wrapping */
-    padding-left: 0;
-    list-style: none;
-    animation: moveRight 40s linear infinite;
+  white-space: nowrap; /* Prevent wrapping */
+  padding-left: 0;
+  list-style: none;
+  animation: moveRight 40s linear infinite;
 }
 .ulistElement {
-    display: inline-block;
-    font-family: switzer-thin;
-    color: var(--black);
-    font-size: 1.5rem;
-    margin-right: 5%;
+  display: inline-block;
+  font-family: switzer-thin;
+  color: var(--black);
+  font-size: 1.5rem;
+  margin-right: 5%;
 }
 
 .ulistElementDarkmode {
-    display: inline-block;
-    font-family: switzer-thin;
-    color: var(--white);
-    font-size: 1.5rem;
-    margin-right: 5%;
+  display: inline-block;
+  font-family: switzer-thin;
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-right: 5%;
 }
 
 @keyframes moveRight {
-    0% {
-        transform: translateX(0%);
-    }
-    50% {
-        transform: translateX(-70%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-70%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }

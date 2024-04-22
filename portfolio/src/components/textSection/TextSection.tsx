@@ -1,14 +1,13 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../providers/ThemeProvider";
-import styles from "./TextSection.module.css"
+import styles from "./TextSection.module.css";
 
-export default function TextSection(text:{ text: string}) {
+export default function TextSection(text: { text: string }) {
+  const { darkMode } = useContext(ThemeContext);
 
-    const { darkMode } = useContext(ThemeContext);
-
-    return (
-        <p className={darkMode ? styles.paragraphDarkmode :styles.paragraph}>
-            {text.text}
-        </p>
-    );
+  return (
+    <p className={darkMode ? styles.paragraphDarkmode : styles.paragraph}>
+      {text.text}
+    </p>
+  );
 }

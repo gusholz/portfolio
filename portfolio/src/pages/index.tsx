@@ -3,7 +3,6 @@ import { DarkModeProvider } from "../providers/ThemeProvider";
 import Main from "@/components/main/Main";
 
 export default function Home() {
-
   return (
     <>
       <Head>
@@ -16,15 +15,15 @@ export default function Home() {
         body {
           margin: 0;
           padding: 0;
-          --white: #D9D9D9;
-          --gray_light: #8C8C8C;
+          --white: #d9d9d9;
+          --gray_light: #8c8c8c;
           --gray_medium: #737373;
           --gray_dark: #404040;
-          --black: #0D0D0D
+          --black: #0d0d0d;
         }
       `}</style>
       <DarkModeProvider>
-        <Main/>
+        <Main />
       </DarkModeProvider>
     </>
   );

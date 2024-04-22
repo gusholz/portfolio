@@ -1,37 +1,36 @@
 @font-face {
-    font-family: switzer-thin;
-    src: url(../../../public/static/fonts/Switzer-Thin.otf);
+  font-family: switzer-thin;
+  src: url(../../../public/static/fonts/Switzer-Thin.otf);
 }
 
 .imageDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(0deg); 
-    transition: transform 0.4s ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(0deg);
+  transition: transform 0.4s ease-in;
 }
 
 .rotateDiv {
-    transform: rotate(15deg); 
-    transition: transform 0.4s ease-in;
+  transform: rotate(15deg);
+  transition: transform 0.4s ease-in;
 }
 
-
 .imageTitle {
-    font-family: switzer-thin;
-    color: var(--black);
-    font-size: 1.2rem;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 5vh;
+  font-family: switzer-thin;
+  color: var(--black);
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5vh;
 }
 
 .imageTitleDarkmode {
-    font-family: switzer-thin;
-    color: var(--white);
-    font-size: 1.2rem;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 5vh;
+  font-family: switzer-thin;
+  color: var(--white);
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5vh;
 }

@@ -7,20 +7,18 @@ import { ThemeContext } from "../../providers/ThemeProvider";
 import { useContext } from "react";
 import styles from "./main.module.css";
 
-
 export default function Main() {
-    
-    const { darkMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
 
-    return (
-        <>
-            <main className={darkMode ? styles.mainDarkmode : styles.main}>
-            <Tagline />
-            <Callout />
-            <FixedSideBar />
-            <SectionCollection />
-            <ProjectsShowcase />
-            </main>
-        </>
-    );
+  return (
+    <>
+      <main className={darkMode ? styles.mainDarkmode : styles.main}>
+        <Tagline />
+        <Callout />
+        <FixedSideBar />
+        <SectionCollection />
+        <ProjectsShowcase />
+      </main>
+    </>
+  );
 }

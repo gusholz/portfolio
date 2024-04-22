@@ -1,13 +1,13 @@
 .stackDisplay {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .image {
-    margin-right: 3vw;
+  margin-right: 3vw;
 }
 
 .stackDisplayIcons {
-    margin-right: 5vw;
+  margin-right: 5vw;
 }
